@@ -35,6 +35,8 @@ import WideButton from './WideButton'
             Next
           </WideButton>
           <br/><br/>
+          * click on the artist's picture to view their top tracks
+          <br/>
           {itemsArray}
         </div>
       }

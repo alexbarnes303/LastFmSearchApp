@@ -17,7 +17,7 @@ export function loadTopTracks(results) {
 export function searchError() {
   return {
     type: 'SEARCH_ERROR',
-    payload: 'Search failed, check the name of the country and try again'
+    payload: 'Search failed, wait a minute and try again'
   };
 }
 
