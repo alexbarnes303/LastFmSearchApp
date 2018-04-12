@@ -13,6 +13,7 @@ export function geoSearch(query, page) {
   	axios.get(requestUrl + geoSearchMethod +  query + '&api_key=' + api_key + '&limit=' + limit + '&page=' + page + '&format=json')
   	.then(res => {
       const results = res.data.topartists
+      console.log('topArtists', results)
       dispatch(actions.searchComplete())
       dispatch(actions.loadSearchResults(results))
     })
@@ -28,6 +29,7 @@ export function getTopTracks(artist, page) {
   	axios.get(requestUrl + getTopTracksMethod + artist + '&api_key=' + api_key + '&limit=' + limit + '&page=' + page + '&format=json')
   	.then(res => {
       const results = res.data.toptracks
+      console.log('topTracks', results)
       dispatch(actions.searchComplete())
       dispatch(actions.loadTopTracks(results))
     })

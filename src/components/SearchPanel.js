@@ -2,7 +2,6 @@ import React from 'react'
 import Button from './Button'
 import Select from 'react-select'
 import 'react-select/dist/react-select.css'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const SearchPanel = (props) => {
